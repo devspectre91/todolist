@@ -96,6 +96,7 @@ function main() {
         checkBox.setAttribute("id", i);
         let p = document.createElement("label");
         p.innerText = item.name;
+        p.style.textTransform="capitalize";
         p.setAttribute("data-id", i);
         p.setAttribute("for",i)
         if (item.isDone == true) {
