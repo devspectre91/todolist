@@ -9,24 +9,34 @@
 </head>
 
 <body>
-  <div class="container">
-    <h1> My To do list <img src="chameleon2.gif" width="100px" alt=""></h1>
-    <input class="list-input" type="text" placeholder="What needs to be done?">
-    <ul class="todolist"> </ul>
-    <ul class="filters">
-      <li>
-        <a href="#/" data-tag="all" class="selected">All</a>
-      </li>
-      <li>
-        <a data-tag="active" href="#/active">Active</a>
-      </li>
-      <li>
-        <a data-tag="completed" href="#/completed">Completed</a>
-      </li>
-      <button class="clear-completed">Clear completed</button>
-    </ul>
-  </div>
-  <script src="./script.js"></script>
+          <section class="todoapp container">
+
+                <header>
+                  <h1> My To do list <img src="chameleon2.gif" width="100px" alt=""></h1>
+                  <input class="list-input" type="text" placeholder="What needs to be done?">
+                </header>
+
+                <main>
+                  <ul class="todolist"> </ul>
+                </main>
+
+                <footer>
+                  <ul class="filters">
+                    <li>
+                      <a href="#/" data-tag="all" class="selected">All</a>
+                    </li>
+                    <li>
+                      <a data-tag="active" href="#/active">Active</a>
+                    </li>
+                    <li>
+                      <a data-tag="completed" href="#/completed">Completed</a>
+                    </li>
+                    <button class="clear-completed">Clear completed</button>
+                  </ul>
+                </footer>
+
+          </section>
+           <script src="./script.js"></script>
 </body>
 
 </html>

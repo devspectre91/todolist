@@ -180,27 +180,15 @@ body {
   text-align: center;
 }
 
-ul {
+/* styling header ---------------------------------------------------------------------*/
+h1 {
   text-align: center;
-
-}
-
-.filters {
-  background-color: white;
-  text-align: right;
-  width: 80%;
-  margin-left: 4rem;
-  padding: 0.5rem;
-
-}
-
-.list-input {
-  width: 80%;
-  padding: 1rem;
-
-  border: none;
-  font-size: 1.5rem;
-  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.137);
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.589);
+  margin-bottom: 1rem;
+  line-height: 1.5;
 
 }
 
@@ -215,6 +203,28 @@ input:focus {
   outline: none;
 }
 
+.list-input {
+  width: 80%;
+  padding: 1rem;
+
+  border: none;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.137);
+
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+/* styling main -------------------------------------------------------------------------------------------------*/
+ul {
+  text-align: center;
+
+}
+
+
 .todolist li {
   background-color: white;
 
@@ -228,21 +238,6 @@ input:focus {
   border-bottom: 1px solid rgba(221, 217, 217, 0.801);
 }
 
-.filters li {
-  display: inline-block;
-
-}
-
-h1 {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 3rem;
-  font-weight: 800;
-  color: rgba(0, 0, 0, 0.589);
-  margin-bottom: 1rem;
-  line-height: 1.5;
-
-}
 
 p {
   display: inline-block;
@@ -254,6 +249,37 @@ span {
   float: right;
 }
 
+
+
+
+/* styling footer -------------------------------------------------------------------------------------------*/
+.filters {
+  background-color: white;
+  text-align: right;
+  width: 80%;
+  margin-left: 4rem;
+  padding: 0.5rem;
+
+}
+
+.selected {
+  border: 1px solid rgb(15, 14, 14);
+  color: black;
+  background-color: rgb(107, 168, 230);
+}
+
+.filters li {
+  display: inline-block;
+
+}
+
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  background-color: rgba(219, 42, 19, 0.699);
+}
+
 a {
   text-decoration: none;
   font-size: 0.8rem;
@@ -263,21 +289,4 @@ a {
   background-color: rgba(107, 168, 230, 0.603);
   padding: 0.3rem 0.5rem;
   font-weight: 800;
-}
-
-.selected {
-  border: 1px solid rgb(15, 14, 14);
-  color: black;
-  background-color: rgb(107, 168, 230);
-}
-
-img {
-  vertical-align: middle;
-}
-
-button {
-  border: none;
-  border-radius: 2px;
-  padding: 0.3rem 0.5rem;
-  background-color: rgba(219, 42, 19, 0.699);
 }
