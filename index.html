@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>To Do List</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>My To do list</h1>
+    <input class="list-input" type="text" placeholder="What needs to be done?">
+    <ul class="todolist"> </ul>
+    <ul class="filters">
+      <li>
+        <a href="#/" data-tag="all" class="selected">All</a>
+      </li>
+      <li>
+        <a data-tag="active" href="#/active">Active</a>
+      </li>
+      <li>
+        <a data-tag="completed" href="#/completed">Completed</a>
+      </li>
+    </ul>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
