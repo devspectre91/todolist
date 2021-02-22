@@ -240,6 +240,8 @@ h1 {
   font-weight: 800;
   color: rgba(0, 0, 0, 0.589);
   margin-bottom: 1rem;
+  line-height: 1.5;
+
 }
 
 p {
@@ -267,4 +269,15 @@ a {
   border: 1px solid rgb(15, 14, 14);
   color: black;
   background-color: rgb(107, 168, 230);
+}
+
+img {
+  vertical-align: middle;
+}
+
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  background-color: rgba(219, 42, 19, 0.699);
 }
