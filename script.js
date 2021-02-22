@@ -89,10 +89,13 @@ function main() {
         checkBox.type = "checkbox";
         checkBox.addEventListener("change", handleCheck);
         checkBox.checked = item.isDone;
+        checkBox.classList.add("styled-checkbox");
         checkBox.setAttribute("data-id", i);
-        let p = document.createElement("p");
+        checkBox.setAttribute("id", i);
+        let p = document.createElement("label");
         p.innerText = item.name;
         p.setAttribute("data-id", i);
+        p.setAttribute("for",i)
         if (item.isDone == true) {
             p.style.textDecoration = "line-through";
         } else {
