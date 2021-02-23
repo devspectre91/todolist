@@ -84,12 +84,12 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,34 +104,34 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+	display: block;
 }
 
 body {
-  line-height: 1;
+	line-height: 1;
 }
 
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+	quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none;
+	content: "";
+	content: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* general styling */
@@ -139,221 +139,238 @@ table {
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @keyframes color-change {
-  0% {
-    background-color: rgb(137, 204, 243);
-  }
+	0% {
+		background-color: rgb(137, 204, 243);
+	}
 
-  20% {
-    background-color: gold;
-  }
+	20% {
+		background-color: gold;
+	}
 
-  40% {
-    background-color: indianred;
-  }
+	40% {
+		background-color: indianred;
+	}
 
-  60% {
-    background-color: violet;
-  }
+	60% {
+		background-color: violet;
+	}
 
-  80% {
-    background-color: rgb(60, 163, 60);
-  }
+	80% {
+		background-color: rgb(60, 163, 60);
+	}
 
-  100% {
-    background-color: teal;
-  }
+	100% {
+		background-color: teal;
+	}
 }
 
 body {
-  line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  animation: 20000ms ease-in-out infinite color-change;
+	line-height: 1.5;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	animation: 20000ms ease-in-out infinite color-change;
 }
 
 .container {
-  max-width: 50%;
-  margin: 3rem auto;
-  text-align: center;
+	max-width: 50%;
+	margin: 3rem auto;
+	text-align: center;
 }
 
 /* styling header ---------------------------------------------------------------------*/
 h1 {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 3rem;
-  font-weight: 800;
-  color: rgba(0, 0, 0, 0.589);
-  margin-bottom: 1rem;
-  line-height: 1.5;
-
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 3rem;
+	font-weight: 800;
+	color: rgba(0, 0, 0, 0.589);
+	margin-bottom: 1rem;
+	line-height: 1.5;
 }
 
 input::placeholder {
-  font-size: 1rem;
-  font-weight: 600;
-  font-style: italic;
-  color: rgb(194, 199, 204);
+	font-size: 1rem;
+	font-weight: 600;
+	font-style: italic;
+	color: rgb(194, 199, 204);
 }
 
 input:focus {
-  outline: none;
+	outline: none;
 }
 
 .list-input {
-  width: 80%;
-  padding: 1rem;
+	width: 80%;
+	padding: 1rem;
 
-  border: none;
-  font-size: 1.5rem;
-  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.137);
-
+	border: none;
+	font-size: 1.5rem;
+	box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.137);
 }
 
 img {
-  vertical-align: middle;
+	vertical-align: middle;
+	width: 15%;
 }
-
 
 /* styling main -------------------------------------------------------------------------------------------------*/
-ul {
-  text-align: center;
-
+.todolist {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
 }
-
 
 .todolist li {
-  background-color: white;
+	background-color: white;
 
- position: relative;
-  text-align: left;
-  padding: 1rem;
-  width: 80%;
-  margin: 0 0 0 4rem;
-  font-weight: 500;
+	position: relative;
+	text-align: left;
+	padding: 1rem;
 
-  border-bottom: 1px solid rgba(221, 217, 217, 0.801);
+	font-weight: 500;
+
+	border-bottom: 1px solid rgba(221, 217, 217, 0.801);
 }
 
-
 label {
-  display: inline-block;
-  font-size: 1.2rem;
-  margin-left: 0.5rem;
-  vertical-align: middle;
+	display: inline-block;
+	font-size: 1.2rem;
+	margin-left: 0.5rem;
+	vertical-align: middle;
 }
 
 span {
-  float: right;
+	float: right;
 }
-
-
-
 
 /* styling footer -------------------------------------------------------------------------------------------*/
 .filters {
-  background-color: white;
-  text-align: right;
-  width: 80%;
-  margin-left: 4rem;
-  padding: 0.5rem;
-
+	background-color: white;
+	text-align: right;
+	margin-left: 4rem;
+	padding: 0.5rem;
+	display: block;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .selected {
-  border: 1px solid rgb(15, 14, 14);
-  color: black;
-  background-color: rgb(107, 168, 230);
+	border: 1px solid rgb(15, 14, 14);
+	color: black;
+	background-color: rgb(107, 168, 230);
 }
 
 .filters li {
-  display: inline-block;
-
+	display: inline-block;
 }
 
 button {
-  border: none;
-  border-radius: 2px;
-  padding: 0.3rem 0.5rem;
-  background-color: rgba(219, 42, 19, 0.699);
+	border: none;
+	border-radius: 2px;
+	padding: 0.3rem 0.5rem;
+	background-color: rgba(219, 42, 19, 0.699);
 }
 
 a {
-  text-decoration: none;
-  font-size: 0.8rem;
-  color: white;
-  margin-right: 1rem;
-  border-radius: 2px;
-  background-color: rgba(107, 168, 230, 0.603);
-  padding: 0.3rem 0.5rem;
-  font-weight: 800;
+	text-decoration: none;
+	font-size: 0.8rem;
+	color: white;
+	margin-right: 1rem;
+	border-radius: 2px;
+	background-color: rgba(107, 168, 230, 0.603);
+	padding: 0.3rem 0.5rem;
+	font-weight: 800;
 }
-
 
 /* styled checkbox */
 .styled-checkbox {
-  position: absolute;
-  opacity: 0;
+	position: absolute;
+	opacity: 0;
 }
-.styled-checkbox+label:before{
-    position: relative;
-    cursor: pointer;
-    padding: 0;
-  }
+.styled-checkbox + label:before {
+	position: relative;
+	cursor: pointer;
+	padding: 0;
+}
 
+.styled-checkbox + label:before {
+	content: "";
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: text-top;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.336);
+	background: rgb(248, 246, 246);
+}
 
-  .styled-checkbox+label:before {
-    content: '';
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: text-top;
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.336);
-    background: rgb(248, 246, 246);
-  }
+.styled-checkbox:hover + label:before {
+	background: #4df096;
+}
 
+.styled-checkbox:focus + label:before {
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
 
-  .styled-checkbox:hover+label:before {
-    background: #4df096;
-  }
+.styled-checkbox:checked + label:before {
+	background: #4df096;
+}
 
+.styled-checkbox:disabled + label {
+	color: #b8b8b8;
+	cursor: auto;
+}
 
-  .styled-checkbox:focus+label:before {
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
-  }
+.styled-checkbox:disabled + label:before {
+	box-shadow: none;
+	background: #ddd;
+}
 
+.styled-checkbox:checked + label:after {
+	content: "✔";
+	position: absolute;
+	left: 31px;
+	top: 17px;
+	color: white;
+	background: white;
+	width: 2px;
+	height: 2px;
 
-  .styled-checkbox:checked+label:before {
-    background: #4df096;
-  }
+	transform: rotate(0deg);
+}
 
-  .styled-checkbox:disabled+ label {
-    color: #b8b8b8;
-    cursor: auto;
-  }
-
-
-  .styled-checkbox:disabled+ label:before {
-    box-shadow: none;
-    background: #ddd;
-  }
-
-
-  .styled-checkbox:checked+label:after {
-    content: '✔';
-    position: absolute;
-    left: 31px;
-    top: 17px;
-    color: white;
-    background: white;
-    width: 2px;
-    height: 2px;
-   
-    transform: rotate(0deg);
-  }
+@media only screen and (max-width: 1100px) {
+	.container {
+		max-width: 70%;
+		margin: 1rem auto;
+		text-align: center;
+	}
+	html {
+		font-size: 10px;
+	}
+	img {
+		vertical-align: middle;
+		width: 10%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		max-width: 90%;
+		margin: 1rem auto;
+		text-align: center;
+	}
+	html {
+		font-size: 8px;
+	}
+	img {
+		vertical-align: middle;
+		width: 10%;
+	}
+}

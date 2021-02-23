@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>To Do List</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>To Do List</title>
-</head>
+	<body>
+		<section class="todoapp container">
+			<header>
+				<h1>My To do list <img src="chameleon2.gif" alt="" /></h1>
+				<input
+					class="list-input"
+					type="text"
+					placeholder="What needs to be done?"
+				/>
+			</header>
 
-<body>
-          <section class="todoapp container">
+			<main>
+				<ul class="todolist"></ul>
+			</main>
 
-                <header>
-                  <h1> My To do list <img src="chameleon2.gif" width="100px" alt=""></h1>
-                  <input class="list-input" type="text" placeholder="What needs to be done?">
-                </header>
-
-                <main>
-                  <ul class="todolist">
-                   
-                 </ul>
-                </main>
-
-                <footer>
-                  <ul class="filters">
-                    <li>
-                      <a href="#/" data-tag="all" class="selected">All</a>
-                    </li>
-                    <li>
-                      <a data-tag="active" href="#/active">Active</a>
-                    </li>
-                    <li>
-                      <a data-tag="completed" href="#/completed">Completed</a>
-                    </li>
-                    <button class="clear-completed">Clear completed</button>
-                  </ul>
-                </footer>
-
-          </section>
-           <script src="./script.js"></script>
-</body>
-
+			<footer>
+				<ul class="filters">
+					<li>
+						<a href="#/" data-tag="all" class="selected">All</a>
+					</li>
+					<li>
+						<a data-tag="active" href="#/active">Active</a>
+					</li>
+					<li>
+						<a data-tag="completed" href="#/completed">Completed</a>
+					</li>
+					<button class="clear-completed">Clear completed</button>
+				</ul>
+			</footer>
+		</section>
+		<script src="./script.js"></script>
+	</body>
 </html>
