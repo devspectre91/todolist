@@ -247,6 +247,10 @@ label {
 span {
 	float: right;
 }
+span:hover{
+	cursor: pointer;
+	font-size: larger;
+}
 .showbox{
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;

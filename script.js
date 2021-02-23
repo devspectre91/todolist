@@ -101,6 +101,7 @@ function main() {
         p.setAttribute("for",i)
         if (item.isDone == true) {
             p.style.textDecoration = "line-through";
+            p.style.color="grey";
         } else {
             p.style.textDecoration = "none";
         }
