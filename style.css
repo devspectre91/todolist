@@ -289,10 +289,14 @@ span:hover{
 button {
 	border: none;
 	border-radius: 2px;
+	font-weight: 800;
+	font-size: 0.8rem;
 	padding: 0.3rem 0.5rem;
 	background-color: rgba(219, 42, 19, 0.699);
 }
-
+button:hover{
+	cursor: pointer;
+}
 a {
 	text-decoration: none;
 	font-size: 0.8rem;
