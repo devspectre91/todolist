@@ -12,10 +12,10 @@ function main() {
 
     if (itemsArray.length == 0) {
         document.querySelector(".filters").style.display = "none"; //hiding the filter buttons
-    } else {
+    }else{
         inputElm.style.borderBottom = "1px solid black";
     }
-
+    
 
     //assigining event listeners  to text-input, filter buttons and enter key  
     inputElm.addEventListener("keyup", handleKey);
@@ -96,9 +96,9 @@ function main() {
         checkBox.setAttribute("id", i);
         let p = document.createElement("label");
         p.innerText = item.name;
-        p.style.textTransform = "capitalize";
+        p.style.textTransform="capitalize";
         p.setAttribute("data-id", i);
-        p.setAttribute("for", i)
+        p.setAttribute("for",i)
         if (item.isDone == true) {
             p.style.textDecoration = "line-through";
         } else {
