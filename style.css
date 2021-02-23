@@ -243,6 +243,9 @@ label {
 	margin-left: 0.5rem;
 	vertical-align: middle;
 }
+label:hover{
+	cursor: pointer;
+}
 
 span {
 	float: right;
