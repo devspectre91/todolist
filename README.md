@@ -1,7 +1,7 @@
 # Todos App
 
 Todos app is handy web app to save your daily todos.
-It is also a chrome extension.
+
 
 ## Description
 This app uses Vanilla Javascript, Html, and CSS to implement a persistent list of todos which a user can save in Web Browser.
